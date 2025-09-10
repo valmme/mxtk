@@ -16,7 +16,7 @@ class Program
         while (!WindowShouldClose())
         {
             BeginDrawing();
-            ClearBackground(Color.DarkGray);
+            ClearBackground(new Color(40, 40, 40, 255));
             
             EndDrawing();
         }
