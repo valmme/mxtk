@@ -15,7 +15,11 @@ public class Menu
     Rectangle albumBtn_source = new Rectangle(0, 0, 1080, 1080);
     Rectangle albumBtn_dest = new Rectangle(325, 125, 150, 150);
     Color albumBtn_color = Color.White;
-    
+
+    private InputBox input = new InputBox(15, new Rectangle(305, 285, 200, 35));
+
+    private Rectangle confirmBtn = new Rectangle(210, 455, 185, 35);
+    private Rectangle cancelBtn = new Rectangle(405, 455, 185, 35);
     public void Draw(Resources tex, ref int scene)
     {
         DrawTexturePro(tex.ADD_TEX, addBtn_source, addBtn_dest, Vector2.Zero, 0, addBtn_color);
@@ -50,7 +54,21 @@ public class Menu
         DrawTexturePro(tex.ALBUM_TEX, albumBtn_source, albumBtn_dest, Vector2.Zero, 0, albumBtn_color);
         DrawRectangleLinesEx(albumBtn_dest, 2, albumBtn_color);
         
-        DrawTextEx(tex.font, "New Album", new Vector2(363, 285), 15, 1, Color.White);
+        DrawRectangleRec(confirmBtn, Color.Gray);
+        DrawRectangleRec(cancelBtn, Color.Gray);
+        DrawTextEx(tex.font, "Confirm", new Vector2(265, 462), 20, 1, Color.White);
+        DrawTextEx(tex.font, "Cancel", new Vector2(460, 462), 20, 1, Color.White);
+
+        if (CheckCollisionPointRec(GetMousePosition(), confirmBtn))
+        {
+            DrawRectangleLinesEx(confirmBtn, 2, Color.White);
+        }
+        if (CheckCollisionPointRec(GetMousePosition(), cancelBtn))
+        {
+            DrawRectangleLinesEx(cancelBtn, 2, Color.White);
+        }
+        
+        input.Draw(tex);
 
         if (CheckCollisionPointRec(GetMousePosition(), albumBtn_dest))
         {
