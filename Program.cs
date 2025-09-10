@@ -10,7 +10,7 @@ class Program
     
     const int screenWidth = 800;
     const int screenHeight = 600;
-    public static Textures tex = new Textures();
+    public static Resources tex = new Resources();
     static Menu menu = new Menu();
     
     static void Main()
@@ -36,16 +36,11 @@ class Program
             ClearBackground(new Color(40, 40, 40, 255));
             
             BeginMode2D(camera);
-            if (scene == 0)
-            {
-                camera.Offset = Vector2.Zero;
-                menu.Draw(tex.ADD_TEX, ref scene);
-            }
-
+            
             switch (scene)
             {
-                case 0: camera.Offset = Vector2.Zero; menu.Draw(tex.ADD_TEX, ref scene); break;
-                case 1: camera.Offset = new Vector2(800, 0); menu.Draw(tex.ADD_TEX, ref scene); break;
+                case 0: camera.Offset = Vector2.Zero; menu.Draw(tex, ref scene); break;
+                case 1: camera.Offset = new Vector2(800, 0); menu.Draw(tex, ref scene); break;
             }
             
             EndDrawing();
