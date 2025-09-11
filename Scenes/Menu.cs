@@ -66,6 +66,12 @@ public class Menu
         if (CheckCollisionPointRec(GetMousePosition(), cancelBtn))
         {
             DrawRectangleLinesEx(cancelBtn, 2, Color.White);
+            if (IsMouseButtonPressed(MouseButton.Left))
+            {
+                isCreateMenuOpen = false;
+                Array.Clear(input.name, 0, 15);
+                input.letterCount = 0;
+            }
         }
         
         input.Draw(tex);

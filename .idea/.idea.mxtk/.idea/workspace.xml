@@ -8,7 +8,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="16ddec6a-9fac-478c-8750-f0aa985d2967" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/InputBox.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.mxtk/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.mxtk/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InputBox.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InputBox.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Scenes/Menu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/Menu.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,6 +38,8 @@
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/InputBox.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/vb/Desktop/mxtk/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/vb/Desktop/mxtk/Scenes/Menu.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Scenes/Menu.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -100,7 +104,8 @@
       <option name="presentableId" value="Default" />
       <updated>1757506196522</updated>
       <workItem from="1757506197908" duration="10915000" />
-      <workItem from="1757525729963" duration="5002000" />
+      <workItem from="1757525729963" duration="7073000" />
+      <workItem from="1757586525641" duration="515000" />
     </task>
     <task id="LOCAL-00001" summary="Creating project">
       <option name="closed" value="true" />
@@ -158,7 +163,31 @@
       <option name="project" value="LOCAL" />
       <updated>1757525810608</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="input box">
+      <option name="closed" value="true" />
+      <created>1757531062650</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1757531062650</updated>
+    </task>
+    <task id="LOCAL-00009" summary="input box on adding album menu and buttons">
+      <option name="closed" value="true" />
+      <created>1757531080993</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1757531080993</updated>
+    </task>
+    <task id="LOCAL-00010" summary="new font">
+      <option name="closed" value="true" />
+      <created>1757531092678</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1757531092678</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,7 +202,10 @@
     <MESSAGE value="Texture and logo" />
     <MESSAGE value="SetWindowIcon() &amp; Menu" />
     <MESSAGE value="Album adding menu &amp; .gitignore fork" />
-    <option name="LAST_COMMIT_MESSAGE" value="Album adding menu &amp; .gitignore fork" />
+    <MESSAGE value="input box" />
+    <MESSAGE value="input box on adding album menu and buttons" />
+    <MESSAGE value="new font" />
+    <option name="LAST_COMMIT_MESSAGE" value="new font" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

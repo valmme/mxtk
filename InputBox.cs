@@ -6,9 +6,9 @@ namespace mxtk;
 
 public class InputBox
 {
-    private char[] name;
+    public char[] name;
     private int maxInputChars;
-    private int letterCount = 0;
+    public int letterCount = 0;
     private int framesCounter;
     private bool mouseOn = false;
     private Rectangle textBox;

@@ -18,9 +18,13 @@ class Program
         if (!Directory.Exists("albums")) Directory.CreateDirectory("albums");
         
         InitWindow(screenWidth, screenHeight, "mxtk");
+        
         Image icon = LoadImage("Assets/logo.png");
-        unsafe {Raylib.ImageFormat(ref icon, PixelFormat.UncompressedR8G8B8A8);}
+        ImageFormat(ref icon, PixelFormat.UncompressedR8G8B8A8);
+        Texture2D icon_tex = LoadTextureFromImage(icon);
+        SetTextureFilter(icon_tex, TextureFilter.Point);
         SetWindowIcon(icon);
+        
         SetTargetFPS(60);
         
         Camera2D camera = new Camera2D();
