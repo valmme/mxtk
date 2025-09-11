@@ -1,4 +1,5 @@
 using System.Numerics;
+using System.Runtime.InteropServices;
 using Raylib_cs;
 using static Raylib_cs.Raylib;
 
@@ -7,6 +8,9 @@ namespace mxtk.Scenes;
 public class Menu
 {
     private bool isCreateMenuOpen = false;
+    private string path = null;
+    
+    private Texture2D albumTexture;
     
     Rectangle addBtn_source = new Rectangle(0, 0, 15, 15);
     Rectangle addBtn_dest = new Rectangle(15, 15, 120, 120);
@@ -20,6 +24,10 @@ public class Menu
 
     private Rectangle confirmBtn = new Rectangle(210, 455, 185, 35);
     private Rectangle cancelBtn = new Rectangle(405, 455, 185, 35);
+    
+    [DllImport("user32.dll", CharSet = CharSet.Auto)]
+    public static extern int MessageBox(IntPtr hWnd, string text, string caption, uint type);
+    
     public void Draw(Resources tex, ref int scene)
     {
         DrawTexturePro(tex.ADD_TEX, addBtn_source, addBtn_dest, Vector2.Zero, 0, addBtn_color);
@@ -47,11 +55,28 @@ public class Menu
 
     public void DrawContext(Resources tex)
     {
+        if (IsFileDropped())
+        {
+            path = GetDroppedFiles()[0];
+            string[] parts = path.Split('.');
+            string format = parts[parts.Length - 1];
+            
+            if (format != "png")
+            {
+                MessageBox(IntPtr.Zero, "File must be PNG!", "Error", 0x10);
+                path = null;
+            }
+
+            albumTexture = LoadTexture(path);
+        }
+
+        
         DrawRectangle(0, 0, 800, 600, Color.Black with {A=150});
         DrawRectangle(200, 100, 400, 400, Color.DarkGray);
         DrawRectangleLinesEx(new Rectangle(200, 100, 400, 400), 2, Color.Gray);
         
-        DrawTexturePro(tex.ALBUM_TEX, albumBtn_source, albumBtn_dest, Vector2.Zero, 0, albumBtn_color);
+        if (path == null) DrawTexturePro(tex.ALBUM_TEX, albumBtn_source, albumBtn_dest, Vector2.Zero, 0, albumBtn_color);
+        else DrawTexturePro(albumTexture, albumBtn_source, albumBtn_dest, Vector2.Zero, 0, albumBtn_color);
         DrawRectangleLinesEx(albumBtn_dest, 2, albumBtn_color);
         
         DrawRectangleRec(confirmBtn, Color.Gray);
@@ -71,15 +96,21 @@ public class Menu
                 isCreateMenuOpen = false;
                 Array.Clear(input.name, 0, 15);
                 input.letterCount = 0;
+                path = null;
             }
         }
         
         input.Draw(tex);
 
-        if (CheckCollisionPointRec(GetMousePosition(), albumBtn_dest))
+        if (CheckCollisionPointRec(GetMousePosition(), albumBtn_dest) || path == null)
         {
             albumBtn_color = Color.Gray;
-            DrawTextEx(tex.font, "     Click to\nselect picture", new Vector2(355, 185), 15, 1, Color.White);
+            DrawTextEx(tex.font, "      Drop\npicture here", new Vector2(360, 185), 15, 1, Color.White);
+        }
+
+        if (path != null)
+        {
+            
         }
 
         else albumBtn_color = Color.White;
