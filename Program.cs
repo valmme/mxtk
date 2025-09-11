@@ -23,6 +23,7 @@ class Program
         ImageFormat(ref icon, PixelFormat.UncompressedR8G8B8A8);
         Texture2D icon_tex = LoadTextureFromImage(icon);
         SetTextureFilter(icon_tex, TextureFilter.Point);
+        icon = LoadImageFromTexture(icon_tex);
         SetWindowIcon(icon);
         
         SetTargetFPS(60);
@@ -50,6 +51,7 @@ class Program
             EndDrawing();
         }
         
+        menu.UnloadAlbumIcons(tex.ALBUM_TEX);
         tex.Unload();
         CloseWindow();
     }
