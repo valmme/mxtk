@@ -6,6 +6,7 @@ namespace mxtk;
 public class Resources
 {
     public Texture2D ADD_TEX = LoadTexture("Assets/add.png");
+    public Texture2D RMV_TEX = LoadTexture("Assets/remove.png");
     public Texture2D ALBUM_TEX = LoadTexture("Assets/album.png");
     public Font font = LoadFontEx("Assets/font.ttf", 32, null, 250);
     
