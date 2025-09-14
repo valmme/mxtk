@@ -10,7 +10,9 @@ public class Menu
     private bool isCreateMenuOpen = false;
     private bool newAlbum = true;
     private string path = null;
-
+    private int btnSize = 120;
+    private int spacing = 15;
+    
     private string[] albums;
     private Dictionary<string, Texture2D> albumIcons = new Dictionary<string, Texture2D>();
     
@@ -19,9 +21,13 @@ public class Menu
     
     private Texture2D albumTexture;
     
-    Rectangle addBtn_source = new Rectangle(0, 0, 15, 15);
+    Rectangle addBtn_source = new Rectangle(0, 0, 1080, 1080);
     Rectangle addBtn_dest = new Rectangle(15, 15, 120, 120);
     Color addBtn_color = Color.White;
+    
+    Rectangle removeBtn_source = new Rectangle(0, 0, 1080, 1080);
+    Rectangle removeBtn_dest = new Rectangle(15, 170, 120, 120);
+    Color removeBtn_color = Color.White;
     
     Rectangle albumBtn_source = new Rectangle(0, 0, 1080, 1080);
     Rectangle albumBtn_dest = new Rectangle(325, 125, 150, 150);
@@ -54,12 +60,12 @@ public class Menu
         }
         
         DrawTexturePro(tex.ADD_TEX, addBtn_source, addBtn_dest, Vector2.Zero, 0, addBtn_color);
+        DrawTexturePro(tex.RMV_TEX, removeBtn_source, removeBtn_dest, Vector2.Zero, 0, removeBtn_color);
         DrawTextEx(tex.font, "Add an album", new Vector2(18, 140), 20, 1, Color.White);
+        DrawTextEx(tex.font, "Remove album", new Vector2(18, 295), 20, 1, Color.White);
 
         int startX = 150;
         int startY = 15;
-        int spacing = 15;
-        int btnSize = 120;
 
         int x = startX;
         int y = startY;
@@ -68,18 +74,30 @@ public class Menu
         {
             string albumName = Path.GetFileName(album);
             Texture2D texture = albumIcons[albumName];
+            Color color = Color.White;
             Rectangle dest = new Rectangle(x, y, btnSize, btnSize);
             Rectangle source = new Rectangle(0, 0, texture.Width, texture.Height);
-            DrawTexturePro(texture, source, dest, Vector2.Zero, 0, Color.White);
-            DrawRectangleLinesEx(dest, 2, Color.White);
+            
+            if (CheckCollisionPointRec(GetMousePosition(), dest))
+            {
+                color = Color.Gray;
+            }
+            
+            DrawTexturePro(texture, source, dest, Vector2.Zero, 0, color);
+            DrawRectangleLinesEx(dest, 2, color);
+            
             Vector2 textSize = MeasureTextEx(tex.font, albumName, 20, 1);
             DrawTextEx(tex.font, albumName, new Vector2(x + btnSize / 2 - textSize.X / 2, y + btnSize + 5), 20, 1, Color.White);
+            
             x += btnSize + spacing;
+            
             if (x + btnSize > 800)
             {
                 x = startX;
                 y += btnSize + spacing + 20;
             }
+            
+            
         }
         
         if (!isCreateMenuOpen)
@@ -94,6 +112,17 @@ public class Menu
                 }
             }
             else addBtn_color = Color.White;
+
+            if (CheckCollisionPointRec(GetMousePosition(), removeBtn_dest))
+            {
+                removeBtn_color = Color.LightGray;
+                if (IsMouseButtonPressed(MouseButton.Left))
+                {
+                    removeBtn_color = Color.White;
+                }
+            }
+
+            else removeBtn_color = Color.White; 
         }
 
         else
