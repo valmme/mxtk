@@ -5,14 +5,26 @@ namespace mxtk;
 
 public class Resources
 {
-    public Texture2D ADD_TEX = LoadTexture("Assets/add.png");
-    public Texture2D RMV_TEX = LoadTexture("Assets/remove.png");
-    public Texture2D ALBUM_TEX = LoadTexture("Assets/album.png");
-    public Font font = LoadFontEx("Assets/font.ttf", 32, null, 250);
-    
+    public Texture2D ADD_TEX;
+    public Texture2D RMV_TEX;
+    public Texture2D ALBUM_TEX;
+    public Font font;
+
+    public Resources()
+    {
+        ADD_TEX = LoadTexture("Assets/add.png");
+        RMV_TEX = LoadTexture("Assets/remove.png");
+        ALBUM_TEX = LoadTexture("Assets/album.png");
+
+        font = LoadFontEx("Assets/font.ttf", 20, null, 250);
+        SetTextureFilter(font.Texture, TextureFilter.Point);
+    }
 
     public void Unload()
     {
         UnloadTexture(ADD_TEX);
+        UnloadTexture(RMV_TEX);
+        UnloadTexture(ALBUM_TEX);
+        UnloadFont(font);
     }
 }
