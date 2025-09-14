@@ -9,8 +9,7 @@
   <component name="ChangeListManager">
     <list default="true" id="16ddec6a-9fac-478c-8750-f0aa985d2967" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.mxtk/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.mxtk/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/add.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/add.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Scenes/Menu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/Menu.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,10 +36,32 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Immediate Window" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2251605994faab2e9a772feeb9f7d2af1ad3410169888d997c651461c2b3b71/FileSystem.Windows.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/InputBox.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/vb/Desktop/mxtk/Scenes/Menu.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/vb/Desktop/mxtk/Scenes/Menu.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/vb/Desktop/mxtk/Scenes/Menu.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/vb/Desktop/mxtk/Scenes/Menu.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/vb/Desktop/mxtk/Scenes/Menu.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/vb/Desktop/mxtk/Scenes/Menu.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/vb/Desktop/mxtk/Scenes/Menu.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/vb/Desktop/mxtk/Scenes/Menu.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/vb/Desktop/mxtk/Scenes/Menu.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/vb/Desktop/mxtk/Scenes/Menu.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/vb/Desktop/mxtk/Scenes/Menu.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/vb/Desktop/mxtk/Scenes/Menu.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/vb/Desktop/mxtk/Scenes/Menu.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/vb/Desktop/mxtk/Scenes/Menu.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/vb/Desktop/mxtk/Scenes/Menu.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/vb/Desktop/mxtk/Scenes/Menu.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/vb/Desktop/mxtk/Scenes/Menu.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/vb/Desktop/mxtk/Scenes/Menu.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/vb/Desktop/mxtk/Scenes/Menu.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/vb/Desktop/mxtk/Scenes/Menu.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/vb/Desktop/mxtk/Scenes/Menu.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/vb/Desktop/mxtk/Scenes/Menu.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Scenes/Menu.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/vb/Desktop/mxtk/Scenes/Menu.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -56,7 +77,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    ".NET Project.mxtk.executor": "Run",
+    ".NET Project.mxtk.executor": "Debug",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
@@ -106,7 +127,10 @@
       <workItem from="1757506197908" duration="10915000" />
       <workItem from="1757525729963" duration="7073000" />
       <workItem from="1757586525641" duration="6422000" />
-      <workItem from="1757605053219" duration="5999000" />
+      <workItem from="1757605053219" duration="6406000" />
+      <workItem from="1757758362525" duration="1328000" />
+      <workItem from="1757780319156" duration="1802000" />
+      <workItem from="1757840005974" duration="1602000" />
     </task>
     <task id="LOCAL-00001" summary="Creating project">
       <option name="closed" value="true" />
@@ -204,7 +228,39 @@
       <option name="project" value="LOCAL" />
       <updated>1757591281907</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Tiny logo update">
+      <option name="closed" value="true" />
+      <created>1757611357707</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1757611357707</updated>
+    </task>
+    <task id="LOCAL-00014" summary="textures unloads">
+      <option name="closed" value="true" />
+      <created>1757611501548</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1757611501548</updated>
+    </task>
+    <task id="LOCAL-00015" summary="menu playlist adding is now working finally [+ fixing bugs]">
+      <option name="closed" value="true" />
+      <created>1757611563571</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1757611563571</updated>
+    </task>
+    <task id="LOCAL-00016" summary="workspace.xml upd">
+      <option name="closed" value="true" />
+      <created>1757611572910</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1757611572910</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,7 +291,11 @@
     <MESSAGE value="new font" />
     <MESSAGE value="InputBox bug fixed" />
     <MESSAGE value="Pictures of albums" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pictures of albums" />
+    <MESSAGE value="Tiny logo update" />
+    <MESSAGE value="textures unloads" />
+    <MESSAGE value="menu playlist adding is now working finally [+ fixing bugs]" />
+    <MESSAGE value="workspace.xml upd" />
+    <option name="LAST_COMMIT_MESSAGE" value="workspace.xml upd" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
