@@ -86,7 +86,7 @@ public class InputBox
             );
         }
         
-        DrawTextEx(tex.FONT_20S, new string(name), new Vector2((int)textBox.X + 5, (int)textBox.Y + 6), 25, 1, Color.DarkGray);
+        DrawTextEx(tex.FONT_25S, new string(name), new Vector2((int)textBox.X + 5, (int)textBox.Y + 6), 25, 1, Color.DarkGray);
 
         
         if (mouseOn)
@@ -95,7 +95,7 @@ public class InputBox
             {
                 if ((framesCounter / 20 % 2) == 0)
                 {
-                    DrawTextEx(tex.FONT_20S,
+                    DrawTextEx(tex.FONT_25S,
                         "_",
                         new Vector2((int)textBox.X + 8 + MeasureText(new string(name), 25),
                         (int)textBox.Y + 7),
