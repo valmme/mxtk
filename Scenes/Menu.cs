@@ -124,7 +124,7 @@ public class Menu
                 color = Color.Gray;
 
             DrawTexturePro(texture, source, dest, Vector2.Zero, 0, color);
-            DrawRectangleLinesEx(dest, 2, color);
+            DrawRectangleLinesEx(dest, 2, Color.White);
             Vector2 textSize = MeasureTextEx(tex.FONT_20S, albumName, 20, 1);
             DrawTextEx(tex.FONT_20S, albumName, new Vector2(x + btnSize / 2 - textSize.X / 2, y + btnSize + 5), 20, 1, Color.White);
 
@@ -136,7 +136,7 @@ public class Menu
                 if (selectedForRemove.Contains(albumName))
                     DrawRectangleRec(new Rectangle(checkRect.X + 4, checkRect.Y + 4, 12, 12), Color.White);
 
-                if (IsMouseButtonPressed(MouseButton.Left) && CheckCollisionPointRec(GetMousePosition(), checkRect))
+                if (IsMouseButtonPressed(MouseButton.Left) && CheckCollisionPointRec(GetMousePosition(), dest))
                 {
                     if (selectedForRemove.Contains(albumName)) selectedForRemove.Remove(albumName);
                     else selectedForRemove.Add(albumName);
@@ -162,8 +162,7 @@ public class Menu
                 new Vector2(deleteBtn.X + deleteBtn.Width / 2 - txtSize.X / 2, deleteBtn.Y + 7), 
                 20, 1, Color.White);
             
-            if (CheckCollisionPointRec(GetMousePosition(), deleteBtn))
-                DrawRectangleLinesEx(deleteBtn, 2, canDelete ? Color.White : Color.DarkGray);
+            DrawRectangleLinesEx(deleteBtn, 2, canDelete ? Color.White : Color.DarkGray);
 
             if (canDelete && CheckCollisionPointRec(GetMousePosition(), deleteBtn) && IsMouseButtonPressed(MouseButton.Left))
             {
