@@ -8,7 +8,9 @@ public class Resources
     public Texture2D ADD_TEX;
     public Texture2D RMV_TEX;
     public Texture2D ALBUM_TEX;
-    public Font font;
+    
+    public Font FONT_20S;
+    public Font FONT_15S;
 
     public Resources()
     {
@@ -16,8 +18,10 @@ public class Resources
         RMV_TEX = LoadTexture("Assets/remove.png");
         ALBUM_TEX = LoadTexture("Assets/album.png");
 
-        font = LoadFontEx("Assets/font.ttf", 20, null, 250);
-        SetTextureFilter(font.Texture, TextureFilter.Point);
+        FONT_20S = LoadFontEx("Assets/font.ttf", 20, null, 250);
+        FONT_15S = LoadFontEx("Assets/font.ttf", 15, null, 250);
+        SetTextureFilter(FONT_20S.Texture, TextureFilter.Point);
+        SetTextureFilter(FONT_15S.Texture, TextureFilter.Point);
     }
 
     public void Unload()
@@ -25,6 +29,8 @@ public class Resources
         UnloadTexture(ADD_TEX);
         UnloadTexture(RMV_TEX);
         UnloadTexture(ALBUM_TEX);
-        UnloadFont(font);
+        
+        UnloadFont(FONT_20S);
+        UnloadFont(FONT_15S);
     }
 }

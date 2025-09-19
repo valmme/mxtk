@@ -10,7 +10,7 @@ class Program
     
     const int screenWidth = 800;
     const int screenHeight = 600;
-    public static Resources tex = new Resources();
+    public static Resources tex;
     static Menu menu = new Menu();
     
     static void Main()
@@ -18,7 +18,8 @@ class Program
         if (!Directory.Exists("albums")) Directory.CreateDirectory("albums");
         
         InitWindow(screenWidth, screenHeight, "mxtk");
-        
+
+        tex = new Resources();
         Image icon = LoadImage("Assets/logo.png");
         ImageFormat(ref icon, PixelFormat.UncompressedR8G8B8A8);
         Texture2D icon_tex = LoadTextureFromImage(icon);
