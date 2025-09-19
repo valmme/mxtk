@@ -10,9 +10,7 @@
     <list default="true" id="16ddec6a-9fac-478c-8750-f0aa985d2967" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.mxtk/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.mxtk/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InputBox.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InputBox.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Resources.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Resources.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scenes/Menu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/Menu.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,35 +38,8 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2251605994faab2e9a772feeb9f7d2af1ad3410169888d997c651461c2b3b71/FileSystem.Windows.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/InputBox.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/vb/Desktop/mxtk/Resources.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/vb/Desktop/mxtk/Resources.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/vb/Desktop/mxtk/Scenes/Menu.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/vb/Desktop/mxtk/Scenes/Menu.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/vb/Desktop/mxtk/Scenes/Menu.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/vb/Desktop/mxtk/Scenes/Menu.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/vb/Desktop/mxtk/Scenes/Menu.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/vb/Desktop/mxtk/Scenes/Menu.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/vb/Desktop/mxtk/Scenes/Menu.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/vb/Desktop/mxtk/Scenes/Menu.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/vb/Desktop/mxtk/Scenes/Menu.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/vb/Desktop/mxtk/Scenes/Menu.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/vb/Desktop/mxtk/Scenes/Menu.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/vb/Desktop/mxtk/Scenes/Menu.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/vb/Desktop/mxtk/Scenes/Menu.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/vb/Desktop/mxtk/Scenes/Menu.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/vb/Desktop/mxtk/Scenes/Menu.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/vb/Desktop/mxtk/Scenes/Menu.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/vb/Desktop/mxtk/Scenes/Menu.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/vb/Desktop/mxtk/Scenes/Menu.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/vb/Desktop/mxtk/Scenes/Menu.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/vb/Desktop/mxtk/Scenes/Menu.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/vb/Desktop/mxtk/Scenes/Menu.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/vb/Desktop/mxtk/Scenes/Menu.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/vb/Desktop/mxtk/Scenes/Menu.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/vb/Desktop/mxtk/Scenes/Menu.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Scenes/Menu.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/vb/Desktop/mxtk/Scenes/Menu.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/vb/Desktop/mxtk/Scenes/Menu.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -138,7 +109,8 @@
       <workItem from="1757758362525" duration="1328000" />
       <workItem from="1757780319156" duration="1802000" />
       <workItem from="1757840005974" duration="3828000" />
-      <workItem from="1758292547264" duration="357000" />
+      <workItem from="1758292547264" duration="1572000" />
+      <workItem from="1758299366314" duration="2233000" />
     </task>
     <task id="LOCAL-00001" summary="Creating project">
       <option name="closed" value="true" />
@@ -324,7 +296,39 @@
       <option name="project" value="LOCAL" />
       <updated>1757842886515</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="bad font fix">
+      <option name="closed" value="true" />
+      <created>1758293220617</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1758293220617</updated>
+    </task>
+    <task id="LOCAL-00025" summary="max limit of albums">
+      <option name="closed" value="true" />
+      <created>1758293237186</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1758293237186</updated>
+    </task>
+    <task id="LOCAL-00026" summary="album deleting system">
+      <option name="closed" value="true" />
+      <created>1758294118068</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1758294118068</updated>
+    </task>
+    <task id="LOCAL-00027" summary="album deleting upd">
+      <option name="closed" value="true" />
+      <created>1758300747730</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1758300747730</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -366,7 +370,11 @@
     <MESSAGE value="workspace.xml" />
     <MESSAGE value="Font bug fixed" />
     <MESSAGE value="remove.png" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove.png" />
+    <MESSAGE value="bad font fix" />
+    <MESSAGE value="max limit of albums" />
+    <MESSAGE value="album deleting system" />
+    <MESSAGE value="album deleting upd" />
+    <option name="LAST_COMMIT_MESSAGE" value="album deleting upd" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
